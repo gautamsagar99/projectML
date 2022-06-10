@@ -23,7 +23,7 @@ resource "aws_instance" "os1" {
 
 resource "aws_ebs_volume" "myvol" {
   availability_zone = aws_instance.os1.availability_zone
-  size              = 4
+  size              = 8
 
 
   tags = {
