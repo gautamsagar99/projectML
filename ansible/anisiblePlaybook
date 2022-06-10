@@ -34,7 +34,7 @@
         state: started
         enabled: yes
     - name: copying files
-      copy: src=/home/ec2-user/ml-automation dest=/root/ml-automation
+      copy: src=/home/ec2-user/ml-automation dest=/root/
     - name: install docker image
       command: "sudo docker pull gautamsagar99/machinelearning:v1"
     
