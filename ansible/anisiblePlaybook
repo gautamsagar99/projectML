@@ -1,5 +1,7 @@
 - name: "AWS - Install docker"
   hosts: all
+  vars:
+    path : /home/ec2-user/projectML
   become: yes
   tasks:
     - name: Update all packages
@@ -35,8 +37,6 @@
         enabled: yes
     - name: copying files
       ansible.builtin.copy:
-        src: /home/ec2-user/projectML 
+        src: {{path}} 
         dest: /root/projectML
-    - name: Run command if /path/to/database does not exist (with 'cmd' parameter)
-      ansible.builtin.command:
-        cmd: docker pull gautamsagar99/achinelearning:v1
+
