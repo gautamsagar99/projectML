@@ -34,5 +34,4 @@
         state: started
         enabled: yes
     - name: copying files
-      copy: /home/ec2-user/projectML /root/ml-automation
-
+      copy: src=/home/ec2-user/projectML dest=/root/ml-automation
