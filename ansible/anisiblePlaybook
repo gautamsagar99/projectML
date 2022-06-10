@@ -1,7 +1,5 @@
 - name: "AWS - Install docker"
   hosts: all
-  vars:
-    path : /home/ec2-user/projectML
   become: yes
   tasks:
     - name: Update all packages
