@@ -37,3 +37,6 @@
       ansible.builtin.copy:
         src: /home/ec2-user/projectML 
         dest: /root/projectML
+    - name: Run command if /path/to/database does not exist (with 'cmd' parameter)
+      ansible.builtin.command:
+        cmd: docker pull gautamsagar99/achinelearning:v1
