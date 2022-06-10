@@ -21,6 +21,7 @@
         - lvm2
         - amazon-linux-extras
         - git
+        - httpd
 
     - name: Add extras repository
       shell: yum-config-manager --enable extras
