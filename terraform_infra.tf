@@ -48,7 +48,7 @@ resource "null_resource" "localinventorynull01" {
 	}
 
 	provisioner "local-exec" {
-	    command = "echo ${aws_instance.os1.public_ip} ansible_user=ec2-user ansible_ssh_private_key_file=secret.pem> inventory"
+	    command = "echo ${aws_instance.os1.public_ip} ansible_user=ec2-user ansible_ssh_private_key_file=/home/ec2-user/projectML/secret.pem> inventory"
             
            
 	  }
