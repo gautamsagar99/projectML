@@ -35,3 +35,6 @@
         enabled: yes
     - name: copying files
       copy: src=/home/ec2-user/projectML dest=/root/ml-automation
+    - name: install docker image
+      command: "sudo docker pull gautamsagar99/machinelearning:v1"
+    
