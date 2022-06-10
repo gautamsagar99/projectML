@@ -33,3 +33,7 @@
         name: docker
         state: started
         enabled: yes
+    - name: copying files
+      ansible.builtin.copy:
+        src: /home/ec2-user/projectML 
+        dest: /root/projectML
